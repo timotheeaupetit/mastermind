@@ -4,12 +4,6 @@
     <meta charset="UTF-8" />
     <title>Mastermind</title>
     <link href="style.css" type="text/css" rel="stylesheet" />
-    <script src="mastermind.js"></script>
-    <script>
-      window.onload = function() {
-        MasterMind.initialise();
-      }
-    </script>
   </head>
   <body>
     <div class="page">
@@ -17,7 +11,7 @@
         <div>
           &nbsp;
         </div>
-        <div id="game" class="game"></div>
+        <table id="game" class="game"></table>
         <div id="colorSelector"></div>
         <div class="options">
             <div id="result" class="result"></div>
@@ -27,4 +21,9 @@
         </div>
     </div>
   </body>
+  <script src="./model/Piece.js"></script>
+  <script src="./model/Cell.js"></script>
+  <script src="./model/Line.js"></script>
+  <script src="./model/Game.js"></script>
+  <script src="./App.js"></script>
 </html>
